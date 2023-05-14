@@ -1,0 +1,202 @@
+/*Q1 サイズ変更*/
+.q1-box{
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  background: #f00;
+}
+
+@media screen and (max-width:959px) {
+  .q1-box{
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/*Q2 色変更*/
+.q2-box{
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: #f00;
+}
+
+@media screen and (max-width: 959px) {
+  .q2-box{
+    background-color: #007bff;
+  }
+}
+
+/*Q3 margin値の変更*/
+.q3-blue{
+  width: 300px;
+  height: 300px;
+  margin-right: 150px;
+  background-color: #0008ff;
+  float: left;
+}
+.q3-green{
+  width: 300px;
+  height: 300px;
+  background-color: #22ff00;
+  float: left;
+}
+.q3-wrap{
+  width: 750px;
+  margin: 0 auto;
+}
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+@media screen and (max-width:959px) {
+  .q3-blue{
+    margin-right: 50px;
+  }
+  .q3-wrap{
+    width: 650px;
+    margin: 0 auto;
+  }
+}
+
+/*Q4 floatの解除*/
+.q4-red{
+  width: 300px;
+  height: 300px;
+  background-color: #f00;
+  float: left;
+}
+.q4-blue{
+  width: 300px;
+  height: 300px;
+  background-color: #0008ff;
+  float: left;
+}
+.q4-wrap{
+  width: 600px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width:959px) {
+  .q4-red{
+    float: none;
+  }
+  .q4-green{
+    float: none;
+  }
+}
+
+/*Q5 flexboxの入れ替え(逆順)*/
+.q5-center{
+  display: flex;
+  justify-content: center;
+}
+.q5-red{
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  line-height: 300px;
+  background-color: #f00;
+}
+.q5-blue{
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  line-height: 300px;
+  background-color: #0008ff;
+}
+.q5-orange{
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  line-height: 300px;
+  background-color: #ff8400;
+}
+
+@media screen and (max-width:959px) {
+  .q5-center{
+    flex-direction: row-reverse;
+  }
+  .q5-red{
+    text-align: center;
+    line-height: 300px;
+  }
+  .q5-blue{
+    text-align: center;
+    line-height: 300px;
+  }
+  .q5-orange{
+    text-align: center;
+    line-height: 300px;
+  }
+}
+
+/*Q6 flexboxの入れ替え(指定)*/
+.q6-center{
+  display: flex;
+  justify-content: center;
+}
+.q6-green{
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  line-height: 300px;
+  background-color: #00ff51;
+}
+.q6-yellow{
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  line-height: 300px;
+  background-color: #d4ff00;
+}
+.q6-purple{
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  line-height: 300px;
+  background-color: #ff00e1;
+}
+@media screen and (max-width:959px) {
+  .q6-green{
+    order: 2;
+  }
+  .q6-yellow{
+    order: 3;
+  }
+  .q6-purple{
+    order: 1;
+  }
+}
+
+/*Q7 要素の表示・非表示*/
+.q7-center{
+  display: flex;
+  justify-content: center;
+}
+.q7-red{
+  width: 300px;
+  height: 300px;
+  background-color: #f00;
+}
+.q7-blue{
+  width: 300px;
+  height: 300px;
+  background-color: #0008ff;
+  display: none;
+}
+.q7-green{
+  width: 300px;
+  height: 300px;
+  background-color: #00ff51;
+}
+@media screen and (max-width:959px){
+  .q7-red{
+    display: none;
+  }
+  .q7-blue{
+    display: block;
+  }
+}
