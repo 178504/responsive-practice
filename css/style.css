@@ -89,25 +89,26 @@
 }
 
 /*Q5 flexboxの入れ替え(逆順)*/
-.q5-center{
+.q5-row-reverse{
   display: flex;
   justify-content: center;
+  
 }
-.q5-red{
+.q5-red-row-reverse{
   width: 300px;
   height: 300px;
   text-align: center;
   line-height: 300px;
   background-color: #f00;
 }
-.q5-blue{
+.q5-blue-row-reverse{
   width: 300px;
   height: 300px;
   text-align: center;
   line-height: 300px;
   background-color: #0008ff;
 }
-.q5-orange{
+.q5-orange-row-reverse{
   width: 300px;
   height: 300px;
   text-align: center;
@@ -116,43 +117,43 @@
 }
 
 @media screen and (max-width:959px) {
-  .q5-center{
+  .q5-row-reverse{
     flex-direction: row-reverse;
   }
-  .q5-red{
+  .q5-red-row-reverse{
     text-align: center;
     line-height: 300px;
   }
-  .q5-blue{
+  .q5-blue-row-reverse{
     text-align: center;
     line-height: 300px;
   }
-  .q5-orange{
+  .q5-orange-row-reverse{
     text-align: center;
     line-height: 300px;
   }
 }
 
 /*Q6 flexboxの入れ替え(指定)*/
-.q6-center{
+.q6-flexbox{
   display: flex;
   justify-content: center;
 }
-.q6-green{
+.q6-green-flexbox{
   width: 300px;
   height: 300px;
   text-align: center;
   line-height: 300px;
   background-color: #00ff51;
 }
-.q6-yellow{
+.q6-yellow-flexbox{
   width: 300px;
   height: 300px;
   text-align: center;
   line-height: 300px;
   background-color: #d4ff00;
 }
-.q6-purple{
+.q6-purple-flexbox{
   width: 300px;
   height: 300px;
   text-align: center;
@@ -160,43 +161,43 @@
   background-color: #ff00e1;
 }
 @media screen and (max-width:959px) {
-  .q6-green{
+  .q6-green-flexbox{
     order: 2;
   }
-  .q6-yellow{
+  .q6-yellow-flexbox{
     order: 3;
   }
-  .q6-purple{
+  .q6-purple-flexbox{
     order: 1;
   }
 }
 
 /*Q7 要素の表示・非表示*/
-.q7-center{
+.q7-none{
   display: flex;
   justify-content: center;
 }
-.q7-red{
+.q7-red-none{
   width: 300px;
   height: 300px;
   background-color: #f00;
 }
-.q7-blue{
+.q7-blue-none{
   width: 300px;
   height: 300px;
   background-color: #0008ff;
   display: none;
 }
-.q7-green{
+.q7-green-none{
   width: 300px;
   height: 300px;
   background-color: #00ff51;
 }
 @media screen and (max-width:959px){
-  .q7-red{
+  .q7-red-none{
     display: none;
   }
-  .q7-blue{
+  .q7-blue-none{
     display: block;
   }
 }
