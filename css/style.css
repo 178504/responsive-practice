@@ -6,7 +6,7 @@
   background: #f00;
 }
 
-@media screen and (max-width:959px) {
+@media screen and (max-width:960px) {
   .q1-box{
     width: 200px;
     height: 200px;
@@ -21,7 +21,7 @@
   background-color: #f00;
 }
 
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 960px) {
   .q2-box{
     background-color: #007bff;
   }
@@ -51,7 +51,7 @@
   clear: both;
 }
 
-@media screen and (max-width:959px) {
+@media screen and (max-width:960px) {
   .q3-blue{
     margin-right: 50px;
   }
@@ -79,7 +79,7 @@
   margin: 0 auto;
 }
 
-@media screen and (max-width:959px) {
+@media screen and (max-width:960px) {
   .q4-red{
     float: none;
   }
@@ -92,6 +92,7 @@
 .q5-row-reverse{
   display: flex;
   justify-content: center;
+  flex-direction: row;
   
 }
 .q5-red-row-reverse{
@@ -116,21 +117,9 @@
   background-color: #ff8400;
 }
 
-@media screen and (max-width:959px) {
+@media screen and (max-width:960px) {
   .q5-row-reverse{
     flex-direction: row-reverse;
-  }
-  .q5-red-row-reverse{
-    text-align: center;
-    line-height: 300px;
-  }
-  .q5-blue-row-reverse{
-    text-align: center;
-    line-height: 300px;
-  }
-  .q5-orange-row-reverse{
-    text-align: center;
-    line-height: 300px;
   }
 }
 
@@ -145,6 +134,7 @@
   text-align: center;
   line-height: 300px;
   background-color: #00ff51;
+  order: 1;
 }
 .q6-yellow-flexbox{
   width: 300px;
@@ -152,6 +142,7 @@
   text-align: center;
   line-height: 300px;
   background-color: #d4ff00;
+  order: 2;
 }
 .q6-purple-flexbox{
   width: 300px;
@@ -159,8 +150,9 @@
   text-align: center;
   line-height: 300px;
   background-color: #ff00e1;
+  order: 3;
 }
-@media screen and (max-width:959px) {
+@media screen and (max-width:960px) {
   .q6-green-flexbox{
     order: 2;
   }
@@ -181,6 +173,7 @@
   width: 300px;
   height: 300px;
   background-color: #f00;
+  display: block;
 }
 .q7-blue-none{
   width: 300px;
@@ -193,7 +186,7 @@
   height: 300px;
   background-color: #00ff51;
 }
-@media screen and (max-width:959px){
+@media screen and (max-width:960px){
   .q7-red-none{
     display: none;
   }
